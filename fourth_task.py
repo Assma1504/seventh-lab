@@ -1,5 +1,4 @@
-
-studentMyGroup = ["Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов", "Попов", "Васильев", "Новиков", "Фёдоров", "Морозов"]
+studentMyGroup = ["Иванов","Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов", "Попов", "Васильев", "Новиков", "Фёдоров", "Морозов"]
 studentOtherGroup = ["Алексеев", "Белов", "Дмитриев", "Егоров", "Жуков", "Зайцев", "Киселёв", "Лебедев", "Макаров", "Никитин"]
 
 #=================================== Option 1 ============================================================
@@ -13,22 +12,23 @@ studentOtherGroup = ["Алексеев", "Белов", "Дмитриев", "Ег
 #         studentsList.append(studentOtherGroup[item])
 
 # tupleStudents = tuple(studentsList)
-# print(studentMyGroup)
-# print(studentOtherGroup)
-# print(tupleStudents)
-# print(len(tupleStudents))
+# print(f"Students from our group: {studentMyGroup}")
+# print(f"Students from the other group: {studentOtherGroup}")
+# print(f"Students from bouth groups: {tupleStudents}")
+# print(f"The number of students: {len(tupleStudents)}")
 # studentsList.sort()
 # sortedStudentsTuple = tuple(studentsList)
-# print(sortedStudentsTuple)
-# print (tupleStudents.count("Иванов")) if "Иванов" in tupleStudents else print("No")
-
+# print(f"Here is the sorted tuple: {sortedStudentsTuple}")
+# print ("There is Иванов") if "Иванов" in tupleStudents else print("No")
+# print (tupleStudents.count("Иванов"))
 
 #=================================== Option 2 ============================================================
 tupleStudents = tuple(studentMyGroup[0:5] + studentOtherGroup[0:5])
 sortedStudentsTuple = tuple(sorted(tupleStudents))
-print(studentMyGroup)
-print(studentOtherGroup)
-print(tupleStudents)
-print(len(tupleStudents))
-print(sortedStudentsTuple)
-print (tupleStudents.count("Иванов")) if "Иванов" in tupleStudents else print("No")
+print(f"Students from our group: {studentMyGroup}")
+print(f"Students from the other group: {studentOtherGroup}")
+print(f"Students from bouth groups: {tupleStudents}")
+print(f"The number of students: {len(tupleStudents)}")
+print(f"Here is the sorted tuple: {sortedStudentsTuple}")
+print ("There is Иванов") if "Иванов" in tupleStudents else print("No")
+print (tupleStudents.count("Иванов"))
